@@ -1,0 +1,165 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.1.7
+Date: 7.11.2022
+  Features:
+    - Merged changes from https://github.com/OndrejMus/spidertron-logistics-community
+    - Removed menu simulations
+    - Fixed a crash involving spidertrons with full inventories
+    - New mod setting lets you customize spidertron speed nerf
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 1.16.2021
+  Features:
+    - Space exploration compatiblity
+---------------------------------------------------------------------------------------------------
+Version: 2.1.5
+Date: 10.5.2021
+  Features:
+    - Fixed a crash when you pulled a spidertron controller out of a spidertron item in your inventory
+    - The map will no longer change when you hold a beacon
+    - Deconstructing logistic beacons now works properly
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 10.4.2021
+  Features:
+    - You can now blueprint the requester and the request will stay there
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 10.3.2021
+  Features:
+    - Fixed a UPS bug when you held a blueprint
+    - Fixed that depots would flash no network when you held a blueprint
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 10.2.2021
+  Features:
+    - If two requesters have the same % satisfaction then the spiders will just pick one randomly to fill. It used to be based on the order the requesters were placed in the world
+    - Added soft dependency on equipment gantry
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 10.2.2021
+  Features:
+    - Fixed that sometimes an entire network would freeze
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 10.2.2021
+  Features:
+    - Spidertron beacons have 9 range instead of 8. They will line up with substations
+    - Spidertron beacons are now blueprintable
+    - Spidertron beacons are now deconstructable
+    - Fixed a crash whenever you left-clicked on the request gui
+    - Spiders will now fulfill the lowest filled requests based on percent instead of by raw number
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 10.1.2021
+  Features:
+    - UPS improvements
+    - Spiders are now much smarter. They will always fulfill the largest requests first
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 9.30.2021
+  Features:
+    - You will no longer lose your logistic request slots when you hold a spidertron beacon
+    - Your inventory will no longer resize when holding a spidertron beacon
+    - Your recipes will no longer be hidden when you hold a spidertron beacon
+    - Spidertron beacons will no longer flash low power randomly
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 9.19.2021
+  Features:
+    - Fixed a crash when you installed the mod after you already created a game
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 4.8.2021
+  Features:
+    - Fixed a crash when you opened the game in high resolution mode
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 4.7.2021
+  Features:
+    - Added spidertron logistic beacon. These beacons are a replacement for the old system of having everything in the same roboport network.
+    - Fixed that logistic robots could fill a requester depot
+    - Removed the time to depost items from a spider. They now dropoff instantly
+    - Fixed that warning icons were only rendering on the requester. They now render on all entites
+    - Added new logic for spidertrons. They will now try to clean their inventory of items before taking more requests
+    - Added a main menu simulation
+    - Fixed that spiders could still use the logistic network even if they had no power in their equipment grid
+    - Removed unnessary remote apis
+    - Requester depots are no longer normal requester chests. They now have a custom GUI where you can set the requests
+    - Fixed a bug that made requesters only able to take requests from one spider at a time
+    - Fixed a bug where a spider would be bugged if you shift clicked multiple controllers into the gui at the same time
+    - Copy and pasting between requester depots will now also copy the spidertron request
+    - Re-worded some descriptions of entites and items to be more concise
+    - Fixed incompatibility with AAI vehicles
+    - Removed some unused files in the mod
+    - Added a alt-mode icon for whenever items are taken out of or withdrawn from spidertron depots
+    - Spidertrons will no longer crowd around requesters when they have no orders. Instead, inactive spiders will go to the nearest logistic beacon
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 9.11.2020
+  Features:
+    - Changed recipe for the controller
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 8.24.2020
+  Features:
+    - Added interface to register spiders
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 8.24.2020
+  Features:
+    - Missing logistic icon is now shown
+    - Improved preformance
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 8.20.2020
+  Features:
+    - Fixed rare crash
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 8.19.2020
+  Features:
+    - If a Spidertron already has some a request in its inventory, then it doesn't pick that amount up from providers
+    - Fixed that a spider would get stuck if you were driving it when a logistic request arrived
+    - Improved logic for using deconstructing planner on requesters/providers
+    - Adjusted descriptions
+    - Fixed rare crash involving deconstruction planner
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 8.18.2020
+  Features:
+    - Spidertrons, requesters, and providers must all be in the same logistic network for a request to go through
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 8.18.2020
+  Features:
+    - Changed the hitbox of the requesters and providers so that you can walk through them now
+    - Spidertrons are much smarter now
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 8.18.2020
+  Features:
+    - Requesters and providers can now be connected to the circuit network
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 8.18.2020
+  Features:
+    - Fixed two edge cases where Spidertron would get stuck
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 8.18.2020
+  Features:
+    - Change sprite of provider
+    - Fixed crashes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 8.18.2020
+  Features:
+    - Fixed items being unsorted
+    - Fixed crashes
+    - Fixed an item teleportation bug
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 8.17.2020
+  Features:
+    - Initial release
