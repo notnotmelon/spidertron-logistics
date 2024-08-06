@@ -161,6 +161,7 @@ end
 
 local function end_journey(unit_number, find_beacon)
 	local spider_data = global.spiders[unit_number]
+	if not spider_data then return end
 	if spider_data.status == idle then return end
 	local spider = spider_data.entity
 	
