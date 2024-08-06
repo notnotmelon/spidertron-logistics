@@ -783,7 +783,7 @@ script.on_event(defines.events.on_spider_command_completed, function(event)
 		spider_data.status = dropping_off
 	elseif spider_data.status == dropping_off then
 		local can_insert = min(spider.get_item_count(item), item_count)
-		local actually_inserted = can_insert == 0 and 0 or requester.insert{name = item, count = can_insert}
+		local actually_inserted = can_insert <= 0 and 0 or requester.insert{name = item, count = can_insert}
 			   
 		if actually_inserted ~= 0 then
 			spider.remove_item{name = item, count = actually_inserted}
