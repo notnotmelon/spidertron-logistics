@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.2.3
+Date: 2024-08-06
+  Bugfixes:
+    - Fixed a crash in case a spidertron somehow picks up negative items. https://mods.factorio.com/mod/spidertron-logistics/discussion/645a0e5fd2fe774477f3f39e
+---------------------------------------------------------------------------------------------------
 Version: 2.2.2
 Date: 2024-08-06
   Bugfixes:
