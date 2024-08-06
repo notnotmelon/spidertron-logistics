@@ -893,21 +893,22 @@ script.on_event(defines.events.on_player_removed_equipment, function(event)
 	end
 end)
 
-script.on_event(defines.events.on_player_placed_equipment, function(event)
+script.on_event(defines.events.on_equipment_inserted, function(event)
 	if event.equipment.name ~= spidertron_logistic_controller then return end
 
-	local player = game.get_player(event.player_index)
 	local grid = event.grid
 	local entity
-	for _, spider in pairs(player.surface.find_entities_filtered{type = 'spider-vehicle'}) do
-		local spider_grid = spider.grid
-		if spider_grid and spider_grid == grid then
-			entity = spider
-			break
+	for _, surface in pairs(game.surfaces) do
+		for _, spider in pairs(surface.find_entities_filtered{type = 'spider-vehicle'}) do
+			local spider_grid = spider.grid
+			if spider_grid and spider_grid == grid then
+				entity = spider
+				break
+			end
 		end
 	end
-	
-	if entity == nil then return end
+
+	if not entity then return end
 	if entity.prototype.order == 'z[programmable]' then return end
 	
 	if grid.get_contents()[spidertron_logistic_controller] > 1 then
